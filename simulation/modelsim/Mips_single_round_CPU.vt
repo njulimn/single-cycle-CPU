@@ -1,0 +1,111 @@
+// Copyright (C) 1991-2012 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "07/02/2014 04:42:20"
+                                                                                
+// Verilog Test Bench template for design : Mips_single_round_CPU
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ps/ 1 ps
+module Mips_single_round_CPU_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg clk;
+// wires                                               
+wire [3:0]  ALU_op_out;
+wire [31:0]  ALU_out_out;
+wire ALU_shift_sel_out;
+wire [1:0]  ALU_srcB_out;
+wire [31:0]  B_in_out;
+wire [31:0]  Ex_offset_out;
+wire Ex_top_out;
+wire [31:0]  IR_out;
+wire [31:0]  Imm_ex_out;
+wire Jump_out;
+wire Less_out;
+wire Overflow_out;
+wire [31:0]  Rd_addr_out;
+wire [31:0]  Rd_in_out;
+wire [3:0]  Rd_write_byte_en_out;
+wire Regdst_out;
+wire Regdto_out;
+wire [31:0]  Rs_addr_out;
+wire [31:0]  Rs_out_out;
+wire [31:0]  Rt_addr_out;
+wire [31:0]  Rt_out_out;
+wire Shift_amounsrc_out;
+wire [4:0]  Shift_amount_out;
+wire [1:0]  Shift_op_out;
+wire [31:0]  Shift_out_out;
+wire Zero_out;
+wire [2:0]  condition_out;
+wire [31:0]  pc_in;
+wire [31:0]  pc_out;
+
+// assign statements (if any)                          
+Mips_single_round_CPU i1 (
+// port map - connection between master ports and signals/registers   
+	.ALU_op_out(ALU_op_out),
+	.ALU_out_out(ALU_out_out),
+	.ALU_shift_sel_out(ALU_shift_sel_out),
+	.ALU_srcB_out(ALU_srcB_out),
+	.B_in_out(B_in_out),
+	.Ex_offset_out(Ex_offset_out),
+	.Ex_top_out(Ex_top_out),
+	.IR_out(IR_out),
+	.Imm_ex_out(Imm_ex_out),
+	.Jump_out(Jump_out),
+	.Less_out(Less_out),
+	.Overflow_out(Overflow_out),
+	.Rd_addr_out(Rd_addr_out),
+	.Rd_in_out(Rd_in_out),
+	.Rd_write_byte_en_out(Rd_write_byte_en_out),
+	.Regdst_out(Regdst_out),
+	.Regdto_out(Regdto_out),
+	.Rs_addr_out(Rs_addr_out),
+	.Rs_out_out(Rs_out_out),
+	.Rt_addr_out(Rt_addr_out),
+	.Rt_out_out(Rt_out_out),
+	.Shift_amounsrc_out(Shift_amounsrc_out),
+	.Shift_amount_out(Shift_amount_out),
+	.Shift_op_out(Shift_op_out),
+	.Shift_out_out(Shift_out_out),
+	.Zero_out(Zero_out),
+	.clk(clk),
+	.condition_out(condition_out),
+	.pc_in(pc_in),
+	.pc_out(pc_out)
+);
+always
+#20 clk=~clk;
+
+initial 
+begin 
+clk=0;
+end 
+
+always@(clk)
+begin 
+end                                                       
+endmodule
+
