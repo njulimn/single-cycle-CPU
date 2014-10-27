@@ -1,9 +1,9 @@
 single-cycle-CPU
 ================
-The repository provides one way to realize single-cycle CPU with verilog_VHDL.
-The development enviroment is QUARTUS 12.SP1 in Windows.
-All .v file are the source code for the single-cycle CPU.
-The testbench data is in the simulation file ,whose filetype is named is *.vt.
-You can try it at your own risks! Have fun!
+The repository provides one way to realize single-cycle CPU with verilog_VHDL.<br>
+The development enviroment is QUARTUS 12.SP1 in Windows.<br>
+All .v file are the source code for the single-cycle CPU.<br>
+The testbench data is in the simulation file ,whose filetype is named is *.vt.<br>
+You can try it at your own risks! Have fun!<br>
 /********************************************************/
-It is my first commitment!
+It is my first commitment!<br>
